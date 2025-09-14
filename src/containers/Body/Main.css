@@ -1,0 +1,125 @@
+
+.outer{
+    height:70vh;
+    background: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
+    color: white;
+    padding: 2%;
+}
+.inside{
+   background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+   height: 64vh;
+   display: flex;
+   padding: 2%;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+   border-radius: 5px;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    scrollbar-width: thin;     
+    scrollbar-color: #888 #f1f1f1;
+}
+
+.left-side,.right-side{
+    height: 100%;
+    width: 50% ;
+
+    scroll-behavior: smooth;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    margin-left: 0.8%;
+}
+
+.loader {
+  border: 4px dotted #ffffff;
+  border-top: 4px dotted #000000;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+
+.headline{
+    height:200px;
+    background-repeat: no-repeat;
+}
+#head-line{
+    color: red;
+    font-size:2rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-position: top;
+    
+}
+.news{
+    height:100px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#news{
+    font-weight: 500;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+}
+#link{
+    display: flex;
+    justify-content: center;
+}
+.line{
+    border: 2px solid black;
+    
+}
+
+
+@media(max-width:1000px){
+    .inside{
+        flex-direction: column;
+    }
+    .left-side{
+        width: 100%;
+        margin-bottom: 2%;
+        height: auto;
+    }
+    .right-side{
+        width: 100%;
+        margin-top: 2%;
+        height: auto;
+    }
+
+}
+
+
+@media(max-width:700px){
+    .headline{
+        height: 150px;
+    }
+
+}
+@media(max-width:600px){
+    #head-line{
+        font-size: 1.5rem;
+    }
+    #news{
+        font-size: 1rem;
+    }
+}
+@media(max-width:480px){
+    .inside{
+        height: 68vh;
+    }
+}

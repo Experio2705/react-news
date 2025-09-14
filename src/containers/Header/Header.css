@@ -1,0 +1,23 @@
+
+.header{
+    background-image: url(./src/assets/news.png) ;
+    background-position: center;
+    background-size: cover;
+    height: 10vh ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+}
+
+#News{
+    font-weight: 900;
+}
+#Bulltin{
+    font-weight: 500;
+    color: red;
+    margin-left: 3%;
+}
+.header{
+    font-size: 3rem;
+}
