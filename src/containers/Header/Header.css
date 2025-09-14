@@ -1,6 +1,6 @@
 
 .header{
-    background-image: url(./src/assets/news.png) ;
+    background-image: url(/logo.png) ;
     background-position: center;
     background-size: cover;
     height: 10vh ;
